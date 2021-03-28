@@ -1,0 +1,83 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 340px;
+}
+
+.heading {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  align-self: flex-start;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.hero-container {
+  margin-top: 20px;
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-dets {
+  width: 100%;
+  color: #ffffff;
+}
+.hero-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+.hero-dev {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #dcdcdc;
+}
+.hero-stock {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.hero-price {
+  color: #ffffff;
+}
+.hero-price-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+
+  text-align: right;
+
+  color: #ffffff;
+}
+.hero-button {
+  margin-top: 10px;
+  width: 140px;
+  height: 50px;
+  left: 1431px;
+  top: 947px;
+  outline: none;
+  border: none;
+  background: #e84545;
+  border-radius: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #ffffff;
+}
