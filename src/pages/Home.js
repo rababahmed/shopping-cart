@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import "../styles/Home.css";
 import Hero from "../assets/hero.png";
+import Button from "../components/Button";
+import { useStore } from "../models/Store";
 
 const Home = () => {
   return (
@@ -20,9 +22,7 @@ const Home = () => {
           </div>
           <div className="hero-price">
             <div className="hero-price-text">$60</div>
-            <div>
-              <button className="hero-button">BUY NOW</button>
-            </div>
+            <Button title="See All" />
           </div>
         </div>
       </div>

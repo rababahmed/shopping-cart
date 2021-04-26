@@ -1,25 +1,30 @@
 import React from "react";
 import "../styles/Main.css";
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
+import { useStore } from "../models/Store";
 
 const Header = () => {
+  const cartItems = useStore((state) => state.cart);
   return (
     <div>
       <div className="top-bar">
         <div>
-          <a href="/">
+          <Link to="/shopping-cart/">
             <div>
               <img src={Logo} alt="Logo" className="logo" />
             </div>
-          </a>
+          </Link>
         </div>
         <div className="nav-bar">
           <ul className="nav">
             <li className="nav-item">
-              <a href="/shop">SHOP</a>
+              <Link to="/shopping-cart/shop">SHOP</Link>
             </li>
             <li className="nav-item">
-              <a href="/cart">CART</a>
+              <Link to="/shopping-cart/cart">
+                CART <span>{cartItems.length}</span>
+              </Link>
             </li>
           </ul>
         </div>
